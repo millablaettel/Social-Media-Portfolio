@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Emilia Blättel</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./table.css" />
+    <script src="portfolio.js"></script>
+    <style>
+        .image-gallery {
+            margin-top: 20px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-container img {
+            width: 300px;
+            /* Passe die Breite nach Bedarf an */
+            height: 200px;
+            /* Passe die Höhe nach Bedarf an */
+            margin: 10px;
+            /* Abstand zwischen den Bildern */
+            object-fit: cover;
+            /* Skalierung der Bilder */
+        }
+
+        /* CSS für das Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(176, 188, 152, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a title="Home page" href="./class-content.html" class="left-icon">🏠</a>
+        <nav>
+            <a href="./class-content.html">Class Content</a>
+            <a href="./my-curriculum.html">Curriculum</a>
+            <a href="./my-classes.html">My Classes</a>
+            <a href="./portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>About me</h2>
+            <b>Name:</b>
+            <p>Emilia Blättel</p>
+            <b>Age:</b>
+            <p>19</p>
+            <b>Study Program:</b>
+            <p> Art and Multimedia</p>
+            <b>University:</b>
+            <p> LMU</p>
+        </aside>
+        <section class="image-gallery">
+            <h2>Image Gallery</h2>
+            <div class="gallery-container">
+                <img src="Geister.PaperTxt.pdf" alt="Geister" onclick="openModal('Geister.PaperTxt.pdf')"
+                    class="gallery-image">
+                <img src="Blaettel_BookCover Finally.jpg" alt="Buchcover"
+                    onclick="openModal('Blaettel_BookCover Finally.jpg')" class="gallery-image">
+                <img src="Screenshot 2023-05-16 at 11.32.01.png" alt="T-Shirt"
+                    onclick="openModal('Screenshot 2023-05-16 at 11.32.01.png')" class="gallery-image">
+                <img src="Screenshot 2024-02-06 at 11.42.43.png" alt="Palmen"
+                    onclick="openModal('Screenshot 2024-02-06 at 11.42.43.png')" class="gallery-image">
+                <img src="Blaettel_Calligram.jpg" alt="Calligram" onclick="openModal('Blaettel_Calligram.jpg')"
+                    class="gallery-image">
+                <img src="Blue_Bottle_Laden.jpg" alt="BlueBottle Inside" onclick="openModal('Blue_Bottle_Laden.jpg')"
+                    class="gallery-image">
+                <img src="Outside_Blue_Bottle.jpg" alt="BlueBottle Outside"
+                    onclick="openModal('Outside_Blue_Bottle.jpg')" class="gallery-image">
+                <img src="Acrylic drawing.jpg" alt="Acrylic" onclick="openModal('Acrylic drawing.jpg')"
+                    class="gallery-image">
+                <img src="IMG_0855.jpeg" alt="Collage" onclick="openModal('IMG_0855.jpeg')" class="gallery-image">
+            </div>
+        </section>
+
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <center>&copy;2024 Emilia Blaettel</center>
+    </footer>
+</body>
+
+</html>

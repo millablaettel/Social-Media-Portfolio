@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Emilia Blättel</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./table.css" />
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a title="Home page" href="./class-content.html" class="left-icon">🏠</a>
+        <nav>
+            <a href="./class-content.html">CLlass Content</a>
+            <a href="./my-curriculum.html">Curriculum</a>
+            <a href="./my-classes.html">My Classes</a>
+            <a href="./portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>About me</h2>
+            <b>Name:</b>
+            <p>Emilia Blättel</p>
+            <b>Age:</b>
+            <p>19</p>
+            <b>Study Program:</b>
+            <p> Art and Multimedia</p>
+            <b>University:</b>
+            <p> LMU</p>
+        </aside>
+
+        <section>
+            <h1>My Curriculum</h1>
+            <button onclick="toggleSection('education')">Education</button>
+            <button onclick="toggleSection('experience')">Experience</button>
+            <button onclick="toggleSection('skills')">Skills</button>
+            <button onclick="toggleSection('hobbies')">Hobbies</button>
+
+            <div id='education'>
+                <h2>Education</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>School/ University</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09/2010 - 07/2014</td>
+                            <td>Elementary Schhol: Grundschule an der Türkenstraße in München</td>
+                        </tr>
+                        <tr>
+                            <td>09/2014 - 06/2022</td>
+                            <td>Highschool: Maximiliansgymnasium in München (Abiturnote: 1,2)</td>
+                        </tr>
+                        <tr>
+                            <td>09/2022 - 06/2023</td>
+                            <td>El Camino College in Los Angeles, Kalifornien (Art Major)</td>
+                        </tr>
+                        <tr>
+                            <td>since 10/2023</td>
+                            <td>Ludwig-Maximilians-Universität (Kunst und Multimedia)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id='experience'>
+                <h2>Experience</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Company</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08/2020</td>
+                            <td>Internship at Hotel Andaz Schwabinger Tor</td>
+                        </tr>
+                        <tr>
+                            <td>07/2022</td>
+                            <td>Internship at design agency Kaiser X Labs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id='skills'>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Languages: German, English (C1), Spanish (basic knowledge) </li>
+                </ul>
+            </div>
+            <div id='hobbies'>
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Playing the piano</li>
+                    <li>Digital Art</li>
+                    <li>Skiing</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <center>&copy; 2024 Emilia Blaettel</center>
+    </footer>
+</body>
+
+</html>

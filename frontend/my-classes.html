@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Emilia Blättel</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./table.css" />
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <header>
+    <a title="Home page" href="./class-content.html" class="left-icon">🏠</a>
+    <nav>
+      <a href="./class-content.html">Class Content</a>
+      <a href="./my-curriculum.html">Curriculum</a>
+      <a href="./my-classes.html">My Classes</a>
+      <a href="./portfolio.html">Portfolio</a>
+    </nav>
+    <style>
+      .schedule {
+        margin-top: 20px;
+      }
+
+      .day {
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #FCF3EE;
+        border: 1px solid #B0BC98;
+        margin-right: 10px;
+      }
+
+      .day:hover {
+        background-color: #B0BC98;
+      }
+
+
+      .schedule-content {
+        margin-top: 20px;
+      }
+
+      .schedule-content p {
+        margin: 0;
+      }
+    </style>
+  </header>
+
+  <main>
+    <aside>
+      <h2>About me</h2>
+      <b>Name:</b>
+      <p>Emilia Blättel</p>
+      <b>Age:</b>
+      <p>19</p>
+      <b>Study Program:</b>
+      <p> Art and Multimedia</p>
+      <b>University:</b>
+      <p> LMU</p>
+    </aside>
+
+    <section>
+      <section class="schedule">
+        <h2>Schedule</h2>
+        <div class="day" id="monday" onclick="showSchedule('monday')">Monday</div>
+        <div class="day" id="tuesday" onclick="showSchedule('tuesday')">Tuesday</div>
+        <div class="day" id="wednesday" onclick="showSchedule('wednesday')">Wednesday</div>
+        <div class="day" id="thursday" onclick="showSchedule('thursday')">Thursday</div>
+        <div class="day" id="friday" onclick="showSchedule('friday')">Friday</div>
+      </section>
+
+      <div id="mondaySchedule" class="schedule-content" style="display: none;">
+        <h3>Monday Schedule</h3>
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+          <tr>
+            <td>10:15 - 11:30</td>
+            <td>Digital Media Tutorial</td>
+          </tr>
+          <tr>
+            <td>15:00 - 17.30</td>
+            <td>Painting Class</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div id="tuesdaySchedule" class="schedule-content" style="display: none;">
+        <h3>Tuesday Schedule</h3>
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+          <tr>
+            <td>16:15 - 18:30</td>
+            <td>Social Media Class</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="wednesdaySchedule" class="schedule-content" style="display: none;">
+        <h3>Wednesday Schedule</h3>
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+          <tr>
+            <td>14:00 - 15:45</td>
+            <td>Introduction to Programming</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="thursdaySchedule" class="schedule-content" style="display: none;">
+        <h3>Thursday Schedule</h3>
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+          <tr>
+            <td>10:15 - 11:30</td>
+            <td>Programming Tutorial</td>
+          </tr>
+          <tr>
+            <td>17:15 - 19.30</td>
+            <td>Introduction to Digital Designing</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="fridaySchedule" class="schedule-content" style="display: none;">
+        <h3>Friday Schedule</h3>
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+          <tr>
+            <td>10:15 - 11:30</td>
+            <td>Digital Media</td>
+          </tr>
+        </table>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <center>&copy; 2024 Emilia Blaettel</center>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
